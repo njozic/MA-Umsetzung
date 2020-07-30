@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stepthrough>
+  <regions minheight="500">
+
+    <region>
+      <step content="&#x25BC; MDA-Struktur" fgcolor="#000000" type="Text" />
+    </region>
+    <region stretch="false" height="50">
+      <step content="MDA-Struktur" bgcolor="#F1F1F1" description="MDALayer" />
+      <step content="Prozessmodell" bgcolor="#F1F1F1" description="ProcessModel" />
+    </region>
+
+    <region>
+      <step content="&#x25BC; CIM" fgcolor="#000000" type="Text" />
+    </region>
+    <region stretch="false" height="50">
+      <step content="UC-Diagramm" bgcolor="#F1F1F1" description="Usecases" />
+      <step content="RQ-Diagramm" bgcolor="#F1F1F1" description="Requirements" />
+    </region>
+
+    <region>
+      <step content="&#x25BC; PIM" fgcolor="#000000" type="Text" />
+    </region>
+    <region stretch="false" height="50">
+      <step content="SIDP-Diagramm" bgcolor="#F1F1F1" description="SIDP" />
+      <step content="Komp.Diagramm" bgcolor="#F1F1F1" description="Components" />
+    </region>
+
+    <region>
+      <step content="&#x25BC; PSM" fgcolor="#000000" type="Text" />
+    </region>
+    <region stretch="false" height="50">
+      <step content="Klassendiagramm" bgcolor="#F1F1F1" description="Classes" />
+    </region>
+
+    <region>
+      <step content="&#x25BC; PSI" fgcolor="#000000" type="Text" />
+    </region>
+    <region stretch="false" height="50">
+      <step content="Code" bgcolor="#F1F1F1" description="Code" />
+    </region>
+  </regions>
+<descriptions>
+
+<description header="MDA-Struktur" name="MDALayer">
+<text>Generieren Sie die MDA-Struktur<br />für Ihr Projekt.
+</text>
+<button content="Generieren" command="GenMDAStruc" />
+</description>
+
+<description header="Prozessmodell" name="ProcessModel">
+<text>Entwerfen Sie ein Prozessmodell,<br />
+dass die gewünschte                   <br />
+Funktionalität erklärt.               <br />
+<br />
+<bold>Durchzuführende Schritte:</bold><br />
+- Prozess-Model anlegen               <br />
+- Aktivitäten erstellen               <br />
+- Events beschreibten                 <br />
+- Artefakte definieren
+</text><more relative="true">content/process_model.html</more>
+</description>
+
+<description header="UC-Diagramm" name="Usecases">
+<text>Generieren Sie Anwendungsfälle  <br />
+und Aktoren für Ihr Projekt. Ein UC-  <br />
+Diagramm wird automatsich im CIM-     <br />
+Package für Sie erstellt.             <br />
+<br />
+<bold>Durchzuführende Schritte:</bold><br />
+- Erstellen der Composite-Structure   <br />
+- Assoziationen setzen                <br />
+- Trace-Verbindungen setzen
+</text><more relative="true">content/usecases.html</more>
+<button content="Generieren" command="GenerateUseCases" />
+</description>
+  
+<description header="RQ-Diagramm" name="Requirements">
+<text>Generieren Sie Requirements für <br />
+Ihr Projekt. Ein RQ-Diagramm wird     <br />
+wird automatisch im CIM-Package er-   <br />
+stellt.                               <br />
+<br />
+<bold>Durchzuführende Schritte:</bold><br />
+- Typ setzen (funkt., n. funkt.)      <br />
+- Assoziationen setzen
+</text><more relative="true">content/requirements.html</more>
+<button content="Generieren" command="GenerateRequirements" />
+</description>
+
+<description header="SIDP-Diagramm" name="SIDP">
+<text>Generieren Sie die physikali-   <br />
+schen Bestandteile für das SIDP-Dia-  <br />
+gramm. Ein SIDP-Diagramm wird automa- <br />
+tisch im PIM-Package erstellt.        <br />
+<br />
+<bold>Durchzuführende Schritte:</bold><br />
+- Ports setzten                       <br />
+- Schnittstellen definieren           <br />
+- Realization-, Assebmly- und Trace-  <br />
+  Verbindungen setzen                 
+</text><more relative="true">content/sidp.html</more>
+<button content="Generieren" command="GenerateSIDP" />
+</description>
+
+<description header="Komp.diagramm" name="Components">
+<text>Generieren Sie die Komponenten  <br />
+für Ihr Projekt. Ein UML-Komponenten- <br />
+diagramm wird automatisch im PIM-Pack-<br />
+age erstellt.                         <br />
+<br />
+<bold>Durchzuführende Schritte:</bold><br />
+- Assembly- und Trace-Verbindungen    <br />
+  setzen.
+</text><more relative="true">content/components.html</more>
+<button content="Generieren" command="GenerateComponents" />
+</description>
+
+<description header="Klassendiagramm" name="Classes">
+<text>Generieren Sie die Klassen für  <br />
+Projekt. Ein UML-Klassendiagramm wird <br />
+automatisch im PSM-Package erstellt.  <br />
+<br />
+<bold>Durchzuführende Schritte:</bold><br />
+- Attribute und Operationen definieren<br />
+- Assoziationen und Trace-Verbindungen<br />
+  setzen.
+</text><more relative="true">content/classes.html</more>
+<button content="Generieren" command="GenerateClasses" />
+</description>
+
+<description header="Code-Generierung" name="Code">
+<text>Generieren Sie Code aus den     <br />
+Klassen. Bitte folgen Sie der Anlei-  <br />
+leitung in der Hilfeseite.
+</text><more relative="true">content/code_generation.html</more>
+</description>
+    
+</descriptions>
+  
+</stepthrough>

@@ -1,0 +1,33 @@
+<structurename="structure">
+	
+	<rootNodename="R0">
+		<packagename="Business Layer"stereotype="view"/>
+		<packagename="Function Layer"stereotype="view"/>
+		<packagename="Information Layer"stereotype="view"/>
+		<packagename="Communication Layer"stereotype="view"/>
+		<packagename="Integration Layer"stereotype="view"/>
+		<packagename="Asset Layer"stereotype="view"/>
+	</rootNode>
+
+	<rootNodename="R1">
+		<packagename="Requirements Viewpoint"stereotype="view"/>
+		<packagename="Function Viewpoint"stereotype="view"/>
+		<packagename="Logical Viewpoint"stereotype="view"/>
+		<packagename="Technical Viewpoint"stereotype="view"/>
+	</rootNode>
+	
+	<rootNodename="R2">
+		<packagename="Requirements Viewpoint"stereotype="view"/>
+		<packagename="Function Viewpoint´"stereotype="view"/>
+		<packagename="Logical Viewpoint"stereotype="view"/>
+		<packagename="Technical Viewpoint"stereotype="view"/>
+	</rootNode>
+	
+	<rootNodename="RX">
+		<packagename="Requirements Viewpoint"stereotype="view"/>
+		<packagename="Function Viewpoint"stereotype="view"/>
+		<packagename="Logical Viewpoint"stereotype="view"/>
+		<packagename="Technical Viewpoint"stereotype="view"/>
+	</rootNode>
+	
+</structure>

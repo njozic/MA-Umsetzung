@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>PIM-Layer</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h1>PIM-Layer</h1>
+<div>
+
+<h2>1. Erstellung des SIDP-Diagramms </h2>
+
+Abbildung 1 zeigt, wie auf Grundlage der Regeln f&uuml;r die Modellierung von Prozessen mittels BPMN 2.0 und denen von UC-Diagrammen die Transformation auf ein SIDP-Diagramm zu erfolgen hat. Abbildung 1 ist in drei Bereiche unterteilt. Der erste stellt die Systembestandteile innerhalb des Prozesses mittels BPMN 2.0 dar. Der zweite veranschaulicht die Aktoren des UC-Diagramms. Ausgehend vom dritten Bereich ist der Einsatz von den zuvor stereotypisierten Elementen ersichtlich.
+</div>
+<div class="imgbox">
+	<img class="center-fit" src="images/04-CIM-PIM-Rules.png"/>
+	<div><b>Abbildung 1: </b> CIM-PIM Transformation auf SIDP-Diagramm.</div>
+</div>
+<div>
+	Akteure innerhalb einer Composite-Structure, die das Vorhandensein eines Ger&auml;tes erkenntlich machen, sind als «device block» zu &uuml;berf&uuml;hren. Jene Komponenten, die Sensoren verk&ouml;rpern, sind als «sensor block» zu visualisieren. Zentrale Systembestandteile innerhalb eines "SIDP-Diagramms" sind als «controller block» (Bereich 3, rechts) darzustellen. Die &uuml;berf&uuml;hrung der Akteuere erofolgt Automatisch durch die Funkiton "SIDP-Bestandteile Generieren". Die Verbindungen zwischen einem Akteuren und SDIP-Systembestandteilen sind durch Trace-Verbindungen zu gew&auml;hrleisten und erfolgen manuell.
+</div>
+<div>
+	Sowohl zentrale Systembestandteile als auch Bestandteile, die Sensoren oder Ger&auml;te zum Ausdruck bringen, m&uuml;ssen eine Verbindung zu einer Schnittstellen in Form eines «controller interface» aufweisen. Die Konnektivit&auml;t wird durch die stereotypisierte Assoziationsart «realization» als strichlierte Linie mit einer geschlossenen, leeren Pfeilspitze gekennzeichnet. Der Ausgangspunkt einer solchen Assoziation ist durch den Stereotyp «port» bereitzustellen, welcher denselben Namen wie die Schnittstelle aufweisen muss. Die &uuml;berf&uuml;hrung erfolgt ausgehend von den Assoziationen zwischen den Systembestandteilen aus (Bereich 1) und ist in durch einen fett strichlierten Rahmen (Bereich 3, Mitte) gekennzeichnet. Die &uuml;berf&uuml;hrung erfolgt manuell.
+</div>
+
+<div>
+
+<h2>2. Erstellung des UML-Komponentendiagramms</h2>
+
+Mit Hilfe des SIDP-Diagramms kann eine abstrakte Darstellung der physikalischen Systembestandteile ermg&ouml;licht werden. Um nun die Konnektivit&auml;t zwischen den pyhsikalischen und softwarebezogenen Bestandteilen zu erm&ouml;glichen, kommen UML-Komponentendiagramme zum Einsatz. Folgende Abbildung zeigt die schematische &uuml;berf&uuml;hrung eines SIDP-Diagramms auf ein UML-Komponentendiagramm.
+
+</div>
+
+<div class="imgbox">
+	<img class="center-fit" src="images/05-PIM-PIM-Rules.png"/>
+	<div><b>Abbildung 2: </b> PIM-PIM-Transformation eines SIDP-Diagramms auf ein UML-Komponentendiagramm.</div>
+</div>
+
+<div>
+	Jeder im UML-Profil abgeleitete Stereotyp, der einen Controller, ein Ger&auml;t oder einen Sensor repr&auml;sentiert, muss auf mindestens eine Komponente im UML-Komponentendiagramm &uuml;berf&uuml;hrt werden. Diese wird durch die bereitgestellte Funktion "UML-Komponenten Generieren" erm&ouml;glicht.
+</div>
+
+<div>
+	Zwischen den Elementen mit den Stereotypen «sensor block» beziehungsweise «device block» und «controller block» realisierte stereotypisierte Schnittstellen, Ports, Realization- und Assembly-Assoziationen sind als UML-Assembly-Assoziation im UML-Komponentendiagramm darzustellen. Die Elemente, die von die &uuml;berf&uuml;hrung betroffen sind, sind in Abbildung 3.10 durch einen fett strichlierten Rahmen ersichtlich. Die Assembly-Assoziation sind manuell zu setzten.
+</div>
+
+
+
+</body>
+</html>

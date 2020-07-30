@@ -1,0 +1,50 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.imgbox {
+    display:block;
+}
+
+.center-fit {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    margin:10px;
+    font-family: "Helvetica";
+}
+
+h1 {
+    font-family: "Helvetica Header";
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-family: "Helvetica Header";
+    padding-bottom: 20px;
+}
+
+div {
+    text-indent: 2em;
+    padding-bottom: 10px;
+}
+
+div.ref {
+    padding-left: 1.5em;
+    text-indent:-1.5em;
+    padding-bottom: 10px;
+}
+
+div.footer {
+    text-indent: 0;
+    font-family: "Courier New";
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+div.footer div  {
+    text-indent: 0;
+}

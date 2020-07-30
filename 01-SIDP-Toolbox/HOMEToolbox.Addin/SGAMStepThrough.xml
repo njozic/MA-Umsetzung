@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stepthrough>
+  <menuitems>
+	  <menuitem icon="content/images/icon_transform.png" tooltip="Transformation...">
+		  <menuitem header="Import UseCases" command="ImportUCs" tooltip="Import UseCases"/>
+		  <menuitem header="Model Transformation" command="ModelTransform" tooltip="Transform Model"/>
+		  <menuitem header="Export Ruleset" command="ExportRuleset" tooltip="Export Ruleset"/>
+		  <menuitem header="Generate Source Code" command="GenerateSourceCode" tooltip="Generate Sourcecode for FREDOSAR Framework"/>
+	  </menuitem>
+	  <menuitem icon="content/images/icon_validate.png" tooltip="Validation...">
+		  <menuitem header="KPI Validity" command="ValidateKPIs" tooltip="Check KPI Validity"/>
+	  </menuitem>
+	  <menuitem icon="content/images/icon_analyse.png" tooltip="Analysis...">
+		  <menuitem header="KPI Calculation" command="CalcKPIs" tooltip="Calculate KPIs"/>
+	  </menuitem>
+  </menuitems>
+  <regions minheight="300" maxheight="500">
+	  <region name="CIM" border="dash" background="content/images/bg_cim.png" stretch="true">
+		  <step content="Business Layer" bgcolor="#FFB5ED" description="blDesc" />
+		  <step content="&#x25BC; Model Transformation" fgcolor="red" description="blTransDesc" type="Text" />
+		  <step content="Function Layer" bgcolor="#B0C7E1" description="flDesc" />
+	  </region>
+	  <region>
+		  <step content="&#x25BC; Model Transformation" fgcolor="red" description="flTransDesc" type="Text" />
+	  </region>
+	  <region name="PIM" border="dash" background="content/images/bg_pim.png" stretch="true">
+		  <step content="Information Layer" bgcolor="#E1DDBF" description="ilDesc" />
+		  <step content="Communication Layer" bgcolor="#D0F2C8" description="cmlDesc" />
+		  <step content="Component Layer" bgcolor="#949EAA" description="cplDesc" />
+	  </region>
+	  <region>
+		  <step content="&#x25BC; Model Transformation" fgcolor="red" description="cplTransDesc" type="Text" />
+	  </region>
+	  <region border="dash" background="content/images/bg_psm.png" stretch="true">
+		  <step background="content/images/mda_psm_i.png" description="ddDesc" type="Panel" />
+	  </region>
+  </regions>
+  <descriptions>
+	  <description header="Business Layer" name="blDesc">
+		  <text>
+		  <b>Business Analysis</b> (incl. Risk Assessment):<br/>
+		  -	Identification of involved Business Actors<br/>
+		  -	Elicitation of Business Goals / Cases<br/>
+		  -	Scenarios for Risk Assessment<br/>
+		  </text>
+      <more relative="true">content/business_layer.html</more>
+      <button content="Import UseCases" command="ImportUCs" />
+		  <button content="Business Layer Matrix" command="GenerateProperLayer" parameter="2" />
+	  </description>
+	  <description header="Model Transformation" name="blTransDesc">
+		  <text>
+		  Model Transformation to <b>Function Layer</b>:<br/>
+		  -	Derive HLUCs from BUCs<br/>
+		  -	Derive Logical Actors from Business Actors<br/>
+		  -	Specify Quality Requirements<br/>
+		  </text>
+		  <button content="Generate HLUCs" name="GenerateHLUCs" command="GenerateHLUCs" />
+	  </description>
+	  <description header="Function Layer" name="flDesc">
+		  <text>
+		  Create Functional Specification:<br/>
+		  -	Describe HLUCs<br/>
+		  -	Decompose HLUCs into PUCs<br/>
+		  -	Describe PUCs (Activity/Sequence Diagrams)<br/>
+		  </text>
+      <more relative="true">content/function_layer.html</more>
+      <button content="Generate PUCs" command="GeneratePUCs" />
+		  <button content="Function Layer Matrix" command="GenerateProperLayer" parameter="3" />
+	  </description>
+	  <description header="Model Transformation" name="flTransDesc">
+		  <text>
+		  -	Map Logical Actors to Components<br/>
+		  -	Derive Components from Reference<br/>
+			  Architecture (NIST LRM or own)<br/>
+		  -	Assign Interfaces and Categories<br/>                    
+		  -	Derive Requirements<br/>
+		  </text>
+      <more relative="true">content/fl_model_trans.html</more>
+      <button content="Derive Component" command="DeriveComponent" />
+	  </description>
+	  <description header="Information Layer" name="ilDesc">
+		  <text>
+		  Develop Business Context View:<br/>
+		  - Depict Information Object Flows<br/>
+		  - Consider all PUCs<br/>
+		  </text>
+      <more relative="true">content/information_layer.html</more>
+      <button content="Information Layer Matrix" command="GenerateProperLayer" parameter="4" />
+	  </description>
+	  <description header="Communication Layer" name="cmlDesc">
+		  <text>
+		  Develop Business Context View:<br/>
+		  - Depict Communication Protocols<br/>
+		  - Consider all PUCs<br/>
+		  - Consider IEC Smart Grid Standards<br/>
+		  Mapping Tool for further detail<br/>
+		  </text>
+      <more relative="true">content/communication_layer.html</more>
+      <button content="Communication Layer Matrix" command="GenerateProperLayer" parameter="5" />
+	  </description>
+	  <description header="Component Layer" name="cplDesc">
+		  <text>
+		  Depict Components, Connections<br/>
+		  and ICT Architecture in detail<br/>
+		  </text>
+      <more relative="true">content/component_layer.html</more>
+      <button content="Component Layer Matrix" command="GenerateProperLayer" parameter="6" />
+	  </description>
+	  <description header="Model Transformation" name="cplTransDesc">
+		  <text>
+		  Prepare components for Implementation
+		  </text>
+	  </description>
+	  <description header="Design &amp; Development" name="ddDesc">
+		  <text>
+		  - Model Rules &amp; Behaviors<br/>
+		  - Model Sequences &amp; Actions<br/>
+		  - Model Class structure<br/>
+		  - Create Code Skeletons<br/>
+		  - Update Model with code changes<br/>
+		  </text>
+	  </description>
+  </descriptions>
+</stepthrough>

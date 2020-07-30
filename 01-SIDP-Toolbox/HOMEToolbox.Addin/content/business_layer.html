@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Business Layer</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h1>System Analysis - Business Layer</h1>
+<div>
+	The very first task when architecting a system is to conduct the Business Analysis task as part of the System Analysis Phase. This task aims at identification of the motivation behind a certain system to be built, the stakeholders involved and their particular interests. Figure 1 demonstrates the utilization of the developed DSL in combination with existing modeling languages (e.g., BPMN) to describe a particular business case.
+</div>
+<div class="imgbox">
+	<img class="center-fit" src="images/bl_fig1.png"/>
+	<div><b>Figure 1.</b> Business Case Analysis.</div>
+</div>
+<div>
+	The intention of the given scenario is to cope with energy peaks on basis of an active grid operation. Basically, the Distribution System Operator (DSO) wants to control the injection from Distributed Energy Resources (DER) and the energy consumption by Customers. Thus, the parties involved are introduced as the Business Actors DSO, DER and Customer. Each of these actors has its own interests which are denoted as Business Goals. The concerning model elements cover a detailed description of the individual goals.
+</div>
+<div>
+	In order to balance the interests between the individual stakeholders, the Business Case (BC) Active Grid Operation is introduced. This model element can cover more detailed considerations of underlying aspects. For example, a Strength-Weakness-Opportunity-Threat (SWOT) analyses or individual business processes, such as the workflow for integration of new participants can be covered by this description. The underlying considerations can be noted in arbitrary ways, for example simply by using plain text, attaching documents or in a more formal way by utilization of Business Process Modeling Notation (BPMN). Figure 1 indicates the integration of such information as in the lower left corner of the picture a preview on the diagram "behind" the BC is included.
+</div>
+<div>
+	Besides the identification and description of the BC it is of special interest to also consider the associated risk. Considerations for a domain specific risk assessment can be found for example in <a href="#footer">[1]</a> or <a href="#footer">[2]</a>. However, in general the introduced risk is based on potential impact and likelihood (for a successful attack). In this early stage when no architectural solution yet exists, the likelihood is rather hard to determine whereas first considerations in terms of potential impact already can be made. In the given example, the risk assessment has been done by utilization of an external document template that is associated with the Business Case.
+</div>
+<div>
+	On basis of the risk assessment a first set of dependability requirements can be derived. In Figure 1 this is indicated by one particular security and one privacy requirement. These requirements typically will span a tree within the model that continuously is refined with every development phase. For decomposition of these requirements the utilization of SysML Requirement Diagrams is a well-known approach. The SGAM Toolbox used to create this example is an extension of an existing modeling tool and thus supports the integration with standardized modeling concepts such as SysML. Furthermore, also integration with external tools such as Requirements Management Tools (RMT) is possible. However, as this example focuses on the overall methodology, it does not provide a more granular description here.
+</div>
+<div>
+	As can be seen, specific considerations on security and privacy already take place in the very beginning. This is of great importance as privacy and security requirements can be identified as architectural drivers and thus have impact on architectural decisions to be made.
+</div>
+<div>
+	To bring the considerations made in a domain specific context the created model can be aligned within the SGAM by placing it within the SGAM Business Layer as depicted in Figure 2. This can be of importance to identify eventually existing regulatory constraints for particular domains. If so, the regulatory instance together with its requirements can be added as additional Business Actor. However, as the given example focuses only on the methodology, regulatory constraints are not considered here in more detail.
+</div>
+<div class="imgbox">
+	<img class="center-fit" src="images/bl_fig2.png"/>
+	<div><b>Figure 2.</b> SGAM Business Layer.</div>
+</div>
+<div class="footer" id="footer">
+    <div><b>References</b></div>
+    <div class="ref">
+        1. Smart Grid Coordination Group. Smart Grid Information Security; CEN-CENELEC-ETSI Smart Grid<br />
+        Coordination Group: Brussels, Belgium, 2012.
+    </div>
+    <div class="ref">
+        2. Neureiter, C.; Eibl, G.; Engel, D.; Schlegel, S.; Uslar, M. A concept for engineering smart grid security<br />
+        requirements based on SGAM models. In Computer Science-Research and Development; Springer: Berlin,<br />
+        Germany, 2014; pp. 1-7.
+    </div>
+    <div>
+        <b>The contents of this document were taken and adapted from following article available at <a href="https://www.en-trust.at" target="_blank">www.en-trust.at</a>:</b>
+    </div>
+    <div class="ref">
+        C. Neureiter, D. Engel, and M. Uslar, "Domain Specific and Model Based Systems Engineering in the Smart Grid as Prerequesite for Security by Design," Electronics, vol. 5, iss. 2, p. 24, 2016.
+    </div>
+</div>
+</body>
+</html>

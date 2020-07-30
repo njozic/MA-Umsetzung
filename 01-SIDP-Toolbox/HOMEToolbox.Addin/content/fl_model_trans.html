@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Model Transformation</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h1>Model Transformation</h1>
+<div>
+	Right after the functional specification within the upper two layers of the SGAM, the architectural development can take place. The first step is to map the <i>Logical Actors</i> from the <i>SGAM Function Layer</i> onto <i>Physical Components</i> ("Model Transformation"). The identified components can be related with actors from the NIST LRM. Thus, appropriate interfaces together with their associated security requirements can be obtained. Figure 1 depicts this mapping for the given example.
+</div>
+<div class="imgbox">
+	<img class="center-fit" src="images/fl_trans_fig1.png"/>
+	<div><b>Figure 1.</b> Mapping of Logical Actors onto physical components.</div>
+</div>
+<div>
+	As one can see in the figure, the mapping is not necessarily a one-to-one mapping. Rather, one single LA (as for example "Distribution Data Collector") can be realized as combination of multiple physical devices ("Distribution Data Collector" and "Head End System", HES). Vice versa, it is also possible for one physical component to realize the functionality of different Logical Actors (e.g., the "DMS Computer" realizes the LAs "DMS" and "Distribution Stabilize and Optimize").
+</div>
+<div>
+	Another very important aspect that can be seen is that not for every physical component a suitable reference can be found within the NIST LRM. In the given example, this pertains for the Head End System. In that case, two aspects can be considered. First, the planned solution is not conform to the NIST LRM and maybe could be reconsidered. Or, the questioned component needs to be added individually. As the development of the Smart Grid typically is no green field approach, the second scenario is more common. In the example given the HES should be integrated manually to demonstrate how to individually extend the NIST LRM. A special focus here is put on maintaining the security concepts introduced by the NIST LRM.
+</div>
+<div>
+	When introducing a new component it is necessary to identify and describe the interfaces with surrounding components. In the given example, the HES will be interfacing with three components (DDC, DMS and DER). Thus, the three interfaces <i>U201, U202</i> and <i>U203</i> are created and instantiated for the HES. Furthermore, each of these interfaces is considered in respect to the available interface categories discussed in Section NIST LRM. After the appropriate interface categories have been identified, the interfaces can be related with them. Doing so provides a direct link between the newly created component and the associated security requirements delivered by the NIST LRM. Figure 2 depicts the creation of <i>Interfaces</i> and their relation with particular <i>Interface Categories</i> for the newly created component <i>HES</i>.
+</div>
+<div class="imgbox">
+	<img class="center-fit" src="images/fl_trans_fig2.png"/>
+	<div><b>Figure 2.</b> Integration of interfaces for a new component.</div>
+</div><div>
+	Due to their huge number the security requirements associated with every <i>Interface Category</i> are not included in the image. To brows through the corresponding requirements, the online available click-through model <a href="https://sgam-toolbox.org/NISTLRM" target="_blank">sgam-toolbox.org/NISTLRM</a> can be consulted.
+</div>
+<div>
+	However, the associated security requirements provided by the NIST LRM are developed <i>"bottom up"</i> and intended to be <i>High Level Security Requirements</i>. Thus, they rather serve as starting point and need further particularization. The necessary refinement can be done on basis of the <i>"top down"</i> requirements developed so far in the preliminary steps. This concept fosters the combination of both, a <i>top down</i> and a <i>bottom up</i> approach which is a very common way for developing security requirements.
+</div>
+<div class="footer" id="footer">
+    <div>
+        <b>The contents of this document were taken and adapted from following article available at <a href="https://www.en-trust.at" target="_blank">www.en-trust.at</a>:</b>
+    </div>
+    <div class="ref">
+        C. Neureiter, D. Engel, and M. Uslar, "Domain Specific and Model Based Systems Engineering in the Smart Grid as Prerequesite for Security by Design," Electronics, vol. 5, iss. 2, p. 24, 2016.
+    </div>
+</div>
+</body>
+</html>

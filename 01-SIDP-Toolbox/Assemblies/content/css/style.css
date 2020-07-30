@@ -1,0 +1,34 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.imgbox {
+    display:block;
+    text-align:center;
+}
+
+.imgbox img{
+    display:inline-block;
+    width:50%; height:auto;
+    margin: 0 auto 10px;
+}
+
+body {
+    font-family: "Calibri";
+    padding:20px 40px;
+}
+
+h1 {
+    font-family: "Calibri Header";
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-family: "Calibri Header";
+    padding-bottom: 20px;
+}
+
+div {
+    padding-bottom: 20px;
+}

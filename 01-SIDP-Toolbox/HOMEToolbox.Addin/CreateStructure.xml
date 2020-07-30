@@ -1,0 +1,11 @@
+<structure name = "structure">
+	
+	<rootNode name = "MDA Structure">
+    <package name = "Prozessmodell" stereotype="view"/>
+    <package name = "Requirements" stereotype="view"/>
+    <package name = "CIM" stereotype="view"/>
+	  <package name = "PIM" stereotype="view"/>
+	  <package name = "PSM" stereotype="view"/>
+	</rootNode>
+
+</structure>

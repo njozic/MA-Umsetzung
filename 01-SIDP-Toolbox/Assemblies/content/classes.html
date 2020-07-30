@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>PSM-Layer</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h1>PSM-Layer</h1>
+<div>
+Ausgehend von den erkannten Softwarekomponenten ist eine Implementierung dieser erforderlich. 
+Plattformspezifische Modelle sind f&uuml;r die eigentliche Implementierung eines Systems unerl&auml;sslich, 
+wobei sich diese auf die Umsetzung des Softwaresystems, welches die Funktionalit&auml;t gew&auml;hrleistet, 
+bezieht. UML-Klassendiagramme helfen bei der Umsetzung eines konzeptionellen Systems und bilden 
+die Grundlage f&uuml;r die Implementierung in einer Programmiersprache. Mit der MDA ist es m&ouml;glich, 
+ausgehend von einem logischen plattformunabh&auml;ngigen Modell, unterschiedliche plattformspezifische 
+Modelle f&uuml;r verschiedene Programmiersprachen zu generieren. Abbildung 1 zeigt wie die &uuml;berf&uuml;hrung 
+von einem UML-Komponentendiagramm auf ein UML-Klassendiagramm zu erfolgen hat.
+</div>
+
+<h2>Erstellung des UML-Klassendiagramms </h2>
+<div class="imgbox">
+	<img class="center-fit" src="images/06-PIM-PSM-Rules.png"/>
+	<div><b>Abbildung 1: </b> PIM-PSM Transformation.</div>
+</div>
+
+<div>
+	Jede Komponente ist auf eine Klasse zu &uuml;berf&uuml;hren, diese wird durch die Funktionalit&auml;t "UML-Klassen Generieren" ermg&ouml;licht. Die Konnektivit&auml;t zwischen UML-Komponenten und UML-Klassen erfolgt manuell durch Trace-Assoziationen.
+</div>
+
+<div>
+	Klassen, die aus Komponenten &uuml;berf&uuml;hrt worden sind, die einer Transformation des Stereotyps «controller block» unterliegen, m&uuml;ssen Klassenattribute abgeleiteter Systemkomponenten aufweisen.
+</div>
+
+<div>
+	Jede &uuml;berf&uuml;hrte Klasse kann Assoziationen zu einer oder mehreren Klassen aufweisen(siehe Klasse A). Assembly-Assoziationen zwischen Komponenten entsprechen den Assoziationen zwischen den &uuml;berf&uuml;hrten Klassen. Jede Klasse kann mehrere Attribute und Operationen aufweisen.
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="85DA3D7A-8" name="SIDP" version="1.0" notes="SIDP"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="assembly" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Assembly">
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="controller block" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="SysML1.4::block" baseStereotypes="SysML1.4::block">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="controller interface" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Interface"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="device block" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="SysML1.4::block" baseStereotypes="SysML1.4::block">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="port" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Port">
+						<Property name="isBehavior" value="false"/>
+						<Property name="isConjugated" value="false"/>
+						<Property name="isService" value="true"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="realization" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Realisation">
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="sensor block" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="SysML1.4::block" baseStereotypes="SysML1.4::block">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

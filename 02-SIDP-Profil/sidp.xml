@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<MDG.Technology version="1.0"><Documentation id="sidp" name="sidp" version="1" notes="SIDP-Profile V1.0"/><Icon><Image type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAB0EgAAdBIAABAAAAAAAAAA
+AAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A
+/wD//wAA////AP////d/////////cAf///////cAAH//////gAAACP////8AAAAA////9wAA
+AAB///+AAAAAAAj//wAAAAAAB//4AAAAAAAAj/cAAAAAAAB/8AAAAAAAAA+AAAAAAAAACHAA
+AAAAAAAHcAAAAAAAAAf4dwAAAAB3j///+HAHj///</Image></Icon><UMLProfiles><UMLProfile profiletype="uml2">
+			<Documentation id="85DA3D7A-8" name="SIDP" version="1.0" notes="SIDP"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="assembly" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Assembly">
+								<Property name="direction" value="Source -&gt; Destination"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="controller block" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="SysML1.4::block" baseStereotypes="SysML1.4::block">
+						<AppliesTo>
+							<Apply type="Class">
+								<Property name="isActive" value=""/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="controller interface" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Interface"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="device block" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="SysML1.4::block" baseStereotypes="SysML1.4::block">
+						<AppliesTo>
+							<Apply type="Class">
+								<Property name="isActive" value=""/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="port" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Port">
+								<Property name="isBehavior" value="false"/>
+								<Property name="isConjugated" value="false"/>
+								<Property name="isService" value="true"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="realization" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Realisation">
+								<Property name="direction" value="Source -&gt; Destination"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="sensor block" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="SysML1.4::block" baseStereotypes="SysML1.4::block">
+						<AppliesTo>
+							<Apply type="Class">
+								<Property name="isActive" value=""/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+				<ViewDefinitions/>
+				<Metamodel/>
+			</Content>
+		</UMLProfile>
+	</UMLProfiles><Images><RefData version="1.0" exporter="EA.25">
+			<DataSet name="Model Images" table="t_image" filter="Name='#Name#'" stoplist=";ImageID;"/></RefData></Images><DiagramProfile><UMLProfile profiletype="uml2">
+			<Documentation id="9E52AAD5-9" name="SIDP" version="1.0" notes="SIDP"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="SIDP-Diagram" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Diagram_Logical">
+								<Property name="toolbox" value="SIDP"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+				<ViewDefinitions/>
+				<Metamodel/>
+			</Content>
+		</UMLProfile>
+	</DiagramProfile><UIToolboxes><UMLProfile profiletype="uml2">
+			<Documentation id="77848152-E" name="SIDP" version="1.0" notes="SIDP"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="SIDP-Components" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="ToolboxPage"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="SIDP::controller block(UML::Class)" type="" description="" unit="" values="" default="controller block"/>
+							<Tag name="SIDP::controller interface(UML::Interface)" type="" description="" unit="" values="" default="controller interface"/>
+							<Tag name="SIDP::device block(UML::Class)" type="" description="" unit="" values="" default="device block"/>
+							<Tag name="SIDP::port(UML::Port)" type="" description="" unit="" values="" default="port"/>
+							<Tag name="SIDP::sensor block(UML::Class)" type="" description="" unit="" values="" default="sensor block"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="SIDP-Connections" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="ToolboxPage"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="SIDP::assembly(UML::Assembly)" type="" description="" unit="" values="" default="assembly"/>
+							<Tag name="SIDP::realization(UML::Realization)" type="" description="" unit="" values="" default="realization"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="SIDP::controller block(UML::Class)" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAB0EgAAdBIAABAAAAAAAAAA
+AAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A
+/wD//wAA////AP//d3d3d/////93d3d3//+H+Hd3d3d3eH////93d3d3d3d3d3d3dwd/////
+eIiHd3iIiIiHd3d3eId4iHd3d3d4eHeId3eHd3+PiI+IiPiHd3iIiIiI//d3h4iIiIj/93iI
+iIiIiIiHd4eHiIiIiId3gHf/////93d3d3d3d3d3</Icon>
+						<AppliesTo>
+							<Apply type="ToolboxItemImage"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="SIDP::controller interface(UML::Interface)" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAB0EgAAdBIAABAAAAAAAAAA
+AAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A
+/wD//wAA////AP//////9wB///////9wAAf//////wAAAP//////AAAA/////3AAAAf3AH+A
+CPgHj3AAAAj/////AAAA//////8AAAD//////3AAAAj/////9wB/cAj4B4//////cAAAB///
+////AAAA//////8AAAD//////3AAB///////9wB/</Icon>
+						<AppliesTo>
+							<Apply type="ToolboxItemImage"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="SIDP::device block(UML::Class)" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAB0EgAAdBIAABAAAAAAAAAA
+AAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A
+/wD//wAA////AAAAAAAAAAAAD/////////APcAAI+Ij/8A94eHj3d3/wD3cHCPiIj/APd3d/
+93d/8A/////////wD3h4//h3//APeHj/93CP8A94ePhwdwfwD3h4+HD4B/APeHj4AHcAgA94
+eP/3AI/wD3h4//h3//AP////////8AAAAAAAAAAA</Icon>
+						<AppliesTo>
+							<Apply type="ToolboxItemImage"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="SIDP::sensor block(UML::Class)" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAB0EgAAdBIAABAAAAAAAAAA
+AAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A
+/wD//wAA////AId3iP93h3//h4d4//8Ih/+Id3f/+Ih3j4d4d4//eHf//4iIeI+Hd//4d4iH
+d3j/eP94iHd3h4///3iIeHePeP//h3h394j3///4eHB3h4f///iHd3iHh4//+P/4iIiI/4B3
+d////3d4d3j3////h3h4//f///+HePd3eP///4d4</Icon>
+						<AppliesTo>
+							<Apply type="ToolboxItemImage"/>
+						</AppliesTo>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+				<ViewDefinitions/>
+				<Metamodel/>
+			</Content>
+		</UMLProfile>
+	</UIToolboxes></MDG.Technology>

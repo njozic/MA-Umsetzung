@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>CIM-Layer</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h1>CIM-Layer</h1>
+<div>
+
+<h2> 1. Erstellung des Prozessmodellierung </h2>
+
+Die SIDP-Toolbox baut ein f&uuml;r den Anwendungsfall spezifiziertes Prozessmodell auf. Die erste Aufgabe in diesem Schritt ist die Modellierung eine Prozesses mit BPMN 2.0. Abbildung 1 zeigt ein schmatische Darstellung die als Vorbild dient. Die SIDP-TOolbox gibt verf&uuml;gt zu diesem Schritt keine Automatismen. Das Prozessmodell muss daher vollst&auml;ndig manuell implementiert werden.
+	
+</div>
+<div class="imgbox">
+	<img class="center-fit" src="images/01-CIM_BPMN2-Rules.png"/>
+	<div><b>Abbildung 1: </b> Grundlegender Aufbau von Prozessen mit BPMN 2.0.</div>
+</div>
+<div>
+	Prozessmodelle in Zusammenhang mit SIDP-Systemen ber&uuml;cksichtigen nur die Anwendung von Standard Start- und Endereignissen. Alle anderen Ereignisarten sind bei der Modellierung eines BPMN 2.0 f&uuml;r die Gestalltung des Prozesses des Anwendungsfalles zu vernachl&auml;ssigen.
+</div>
+<div>
+	Artefakte sind bei der Modellierung von SIDP-Systemen zu verwenden um Aktoren und Systemkomponenten darstellen zu k&ouml;nnen.
+</div>
+<div>
+	Manuelle Aktivit&auml;ten stehen im Zusammenhang mit Aktoren und Service-Aktivit&auml;tenmit Systemkomponenten. Artefakte sind mit Cyan-f&auml;rbigen Assoziationslinien zuAktivt&auml;ten zu verbinden. Die Verbindung zwischen Systemkomponenten sind mitvioletten Assoziationslinien darzustellen.
+</div>
+<div>
+	Anforderungen sind in BPMN-Textannotationen anzugeben und mit Service-Aktivit&auml;ten oder Standard-Endereignissen mittels gr&uuml;ner Assoziationslinien zu verbinden.
+</div>
+<div>
+
+<h2>2. Erstellung des Use-Case-Diagramms</h2>
+
+Der zweite Schritt beinhaltet die Erstellung des Use-Case-Diagramms. In diesem Schritt der Modellierung der CIM-Ebene ist sowohl mit manuellen T&auml;tigkeiten, als auch mit automatismen umzusetzten. Abbildung 2 zeigt eine Vorlage wie Modllierung umzusetzen ist.
+
+</div>
+<div>
+
+</div>
+
+<div class="imgbox">
+	<img class="center-fit" src="images/02-CIM_UC-Rules.png"/>
+	<div><b>Abbildung 2: </b> Vorlage zur Erstellung des Use-Case-Diagramms.</div>
+</div>
+
+<div>
+	Jede Serviceaktivit&auml;t aus einem BPMN 2.0 Prozessmodell entspricht einem Anwendungsfall. Die &uuml;berf&uuml;hrung erfolgt automatisch durch die Funktion "Use-Cases Generieren". Die Verbindungen zwischen einer Serviceaktivit&auml;t und einem Anwendungsfall ist durch eine Trace-Assoziation zu gew&auml;hrleisten und muss manuell erfolgen.
+</div>
+
+<div>
+	Systembestandteile werden wie in Abbildung 2 oben als Artefakte dargestellt. Artefakte werden in Controller und Systemkomponenten unterteilt. Controller stellen zentrale Artefakte dar und weisen mulitple eingehende Verbindungen vo Systemkomponenten auf. Zentrale Artefakte sind Use-Case-Diagramm als Akteure zu &uuml;bef&uuml;hren. Die &uuml;berf&uuml;hrung erfolgt automatisch durch die Funktion "Akteure Generieren". Die Verbindung zwischen einer Serviceaktivit&auml;t und einem Anwendungsfall ist durch eine Trace-Assoziation zu gew&auml;hrleisten und muss manuell erfolgen.
+</div>
+
+<div>
+	Weitere Systembestandteile sind innerhalb einer Composite-Structure eines Anwendungsfalles als Aktoren zu veranschaulichen. Eine Composite-Structure, wird durch ein Brillensymbol rechts unterhalb der Anwendungsfallbezeichnung, signalisiert. Innerhalb der Composite-Structure sind "Sequenzdiagramme" sowie "Aktivit&auml;tsdiagramme" f&uuml;r die detailliertere Beschreibung von einzelnen Anwendungsf&auml;llen anzufertigen. Die folgende Abbildung dient als Vorlage f&uuml;r die Realisierung der Composite-Structure
+</div>
+
+<div class="imgbox">
+	<img class="center-fit" src="images/02-b-UC-Composite_Structure.png"/>
+	<div><b>Abbildung 3: </b> Vorlage zur Erstellung des Use-Case-Diagramms.</div>
+</div>
+
+<div>
+	Inmitten einer Composite-Structure ist die &uuml;berf&uuml;hrung von Systemkomponenten zu Akteuren zu gew&auml;hrleisten. Die Composite-Structure soll die Verbindungen zwischen Controller, Anwendungsfall und Systemkomponente aufweisen. Eine Verbindung zwischen den Systemkomponenten im Prozessmodell und den dazu &uuml;berf&uuml;hrten Akteuren in der Composite-Structure ist durch eine Trace-Assoziation zu gew&auml;hrleisten.
+</div>
+
+<div>
+	Eine "Gruppierung", wie sie in Abbildung 2 durch den Rahmen des Prozessablaufs mit der Benennung "Subjekt" dargestellt wird und ist in UC-Diagrammen als System-Boundary abzubilden. Die &uuml;bef&uuml;hrung erfolgt automatisch durch das EA-Addin. Die Bezeichnung der System-Baundary wird f&uuml;r die der Gruppierung &uuml;bernommen. 
+</div>
+
+<h2>3. Erstellung des Requirement-Diagramms</h2>
+
+Ein essentieller Bestandteil f&uuml;r die Darstellung des CIM ist die Repr&auml;sentation der Anforderungen an das System. Anforderungen werden in BPMN 2.0 als Artefakte in Form von Textannotationen angef&uuml;hrt. Die &uuml;berf&uuml;hrung dieser erfolgt auf einem SysML-Anforderungsdiagramm in Form von funktionalen oder nicht-funktionalen Anforderungsbl&ouml;cken. Die &uuml;berf&uuml;hrung wird efolgt Automatisch durch die Funktion "Anforderungen Generieren" im EA-Addin. Die Spezifizierung der Anforderungsart (funktional oder nicht-funktional)ist manuell einzutragen. Abbildung 3 zeigt den Zusammenhang mit dem in BPMN 2.0 modellierten Prozess und dem SysML-Anforderungsdiagramm.
+
+<div class="imgbox">
+	<img class="center-fit" src="images/03-CIM_RQ-Rules.png"/>
+	<div><b>Abbildung 4: </b> Zusammenhang zwischen Anfoderungen in BPMN 2.0 und dem SysML-Anfoderungsdiagramm.</div>
+</div>
+
+
+</body>
+</html>
